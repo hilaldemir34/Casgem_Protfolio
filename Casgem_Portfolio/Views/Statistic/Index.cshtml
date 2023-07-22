@@ -1,0 +1,33 @@
+﻿﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+<h2>İstatistik Sayfası</h2>
+
+<div class="card text-white bg-primary mb-3" style="width:100%;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">Toplam Personel Sayısı: @ViewBag.employeeCount</h5>
+    </div>
+</div>
+<div class="card text-white bg-info mb-3" style="width:100%;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">En yüksek maaşlı Personel: @ViewBag.maxSalaryEmployee</h5>
+    </div>
+</div>
+<div class="card text-white bg-dark mb-3" style="width:100%;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">Toplam Şehir Sayısı: @ViewBag.totalCityCount</h5>
+    </div>
+</div>
+<div class="card text-white bg-warning mb-3" style="width:100%;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">Yazılım personel sayısı: @ViewBag.countSoftwareDepartment</h5>
+    </div>
+</div>
+<div class="card text-white bg-warning mb-3" style="width:100%;">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">Yazılım personel sayısı: @ViewBag.sumSalarayFromSoftwareDepartment</h5>
+    </div>
+</div>
